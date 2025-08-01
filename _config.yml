@@ -14,6 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
+
+logo: /assets/img/favicons/favicon-96x96.png # local or CORS resources
+
 title: Quanbk # the main title
 
 tagline: Hi, I'm Quanbk. # it will display as the subtitle
@@ -24,9 +27,6 @@ description: >- # used by seo meta and the atom feed
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://qn09.github.io"
-
-
-logo: /assets/logo.jpg
 
 github:
   username: qn09 # change to your GitHub username
@@ -103,7 +103,8 @@ cdn:
 # the avatar on sidebar, support local or CORS resources
 avatar: 
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+
+avatar: 
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
