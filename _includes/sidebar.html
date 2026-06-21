@@ -28,7 +28,7 @@
       <!-- the real tabs -->
       {% assign sorted_tabs = site.tabs | sort: 'order' %}
       {% for tab in sorted_tabs %}
-        {% if tab.parent %}
+        {% if tab.parent or tab.hide %}
           {% continue %}
         {% endif %}
 
