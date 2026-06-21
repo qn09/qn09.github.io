@@ -1,0 +1,74 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Custom nesting sidebar submenu rotation */
+.nav-link[data-bs-toggle="collapse"] {
+  position: relative;
+}
+
+.nav-link[data-bs-toggle="collapse"]:not(.collapsed) .submenu-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-link[data-bs-toggle="collapse"] .submenu-arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Custom Software Card styling */
+.software-card {
+  background-color: var(--card-bg, var(--panel-heading-bg));
+  border: 1px solid var(--main-border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.software-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--link-color);
+}
+
+.software-card .card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.software-card .card-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted-color);
+  margin-bottom: 16px;
+}
+
+.software-card .card-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.software-card-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+.software-card-link:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
