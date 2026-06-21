@@ -1,9 +1,8 @@
 ---
 title: Công Việc Hiện Tại - Vị Trí Backend Engineer
 date: 2026-06-21 11:15:00 +0700
-categories: [Software, Career]
-tags: [backend, system-design, concurrency]
 description: Vai trò hiện tại, những thử thách thực tế trong việc thiết kế hệ thống và mục tiêu phát triển tiếp theo.
+software: true
 ---
 
 Hiện tại, tôi đang đảm nhận vai trò Backend Engineer. Trách nhiệm của tôi đã lớn hơn rất nhiều so với thời kỳ thực tập, tập trung vào việc thiết kế, xây dựng và duy trì các hệ thống dịch vụ ổn định, hiệu năng cao.

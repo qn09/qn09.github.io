@@ -8,7 +8,7 @@ Chào mừng bạn đến với góc chia sẻ về Công nghệ & Lập trình 
 
 ---
 
-{% assign software_posts = site.posts | where_exp: "item", "item.categories contains 'Software'" %}
+{% assign software_posts = site.posts | where_exp: "item", "item.software == true" %}
 {% for post in software_posts %}
 <div class="software-card" onclick="window.location.href='{{ post.url | relative_url }}'">
   <h3 class="card-title">{{ post.title }}</h3>
