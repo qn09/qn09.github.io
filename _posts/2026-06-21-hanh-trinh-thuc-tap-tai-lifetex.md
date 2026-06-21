@@ -1,6 +1,8 @@
 ---
 title: Hành Trình Thực Tập Tại Lifetex
 date: 2026-06-21 11:00:00 +0700
+categories: [Software, Internship]
+tags: [lifetex, backend, spring-boot]
 description: Những viên gạch đầu tiên trong sự nghiệp lập trình và những bài học quý giá từ vị trí thực tập sinh tại Lifetex.
 software: true
 ---
